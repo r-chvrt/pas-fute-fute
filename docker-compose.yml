@@ -1,0 +1,18 @@
+services:
+  pas-fute-fute:
+    build: .
+    container_name: pas-fute-fute
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+
+      - "traefik.http.routers.pas-fute-fute.rule=Host(`quote.romain.chevrot.ovh`)"
+      - "traefik.http.routers.pas-fute-fute.entrypoints=websecure"
+      - "traefik.http.routers.pas-fute-fute.tls.certresolver=letsencrypt"
+
+      - "traefik.http.services.pas-fute-fute.loadbalancer.server.port=3000"
+    networks:
+      - proxy
+networks:
+  proxy:
+    external: true

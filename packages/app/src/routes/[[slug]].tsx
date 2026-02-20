@@ -93,35 +93,8 @@ export default function Home() {
         <p>
           <strong>PasFuteFute</strong>
           {' '}
-          est un projet dédié aux expressions françaises amusantes et imagées pour décrire quelqu'un de manière polie mais taquine. De
-          {' '}
-          <em>« bête à manger du foin »</em>
-          {' '}
-          à
-          {' '}
-          <em>« il n'a pas la lumière à tous les étages »</em>
-          , ces expressions font partie du riche patrimoine linguistique français. Sur ce site, vous trouverez une collection grandissante de ces perles du langage courant.
+          est un projet dédié aux expressions françaises amusantes et imagées pour décrire quelqu'un de manière polie mais taquine. Ceci est un fork du projet initial.
         </p>
-        <h3 id="origine-des-expressions">Origine des expressions</h3>
-        <p>
-          Les expressions françaises pour parler des moins fute·e·s ont souvent des racines historiques ou culturelles. Par exemple, l'expression « il n'a pas inventé l'eau chaude » fait référence à l'invention de l'eau chaude, qui est un concept si simple qu'il semble évident. D'autres expressions, comme « il a un pois chiche dans la tête », sont plus imagées et visent à décrire le comportement d'une personne de manière humoristique.
-        </p>
-        <h3 id="pourquoi-utiliser-ces-expressions-">Pourquoi utiliser ces expressions ?</h3>
-        <p>
-          Ces expressions permettent de parler de l'intelligence ou du comportement de quelqu'un sans être trop direct·e ou blessant·e. Elles ajoutent du charme et de la finesse à une conversation, et certaines d'entre elles sont devenues tellement ancrées dans la culture qu'elles sont utilisées presque sans y penser. Que ce soit pour une blague entre amis ou pour éviter un commentaire trop frontal,
-          {' '}
-          <strong>les expressions de PasFuteFute</strong>
-          {' '}
-          sont là pour vous inspirer.
-        </p>
-        <h3 id="contribuez-pasfut-fut-">Contribuez à PasFuteFute</h3>
-        <p>
-          Vous connaissez une expression ou une citation qui n'est pas encore présente sur le site ? Vous pouvez contribuer en soumettant vos propres trouvailles via notre
-          {' '}
-          <a href="https://github.com/CorentinTh/pas-fute-fute">dépôt GitHub</a>
-          . Chaque contribution aide à enrichir ce répertoire unique des expressions françaises.
-        </p>
-
       </div>
 
     </main>

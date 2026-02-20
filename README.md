@@ -26,7 +26,7 @@
 
 **Pas Fute Fute...** est un répertoire des expressions françaises pour décrire les moins futé·e·s. Ce projet a pour but de recenser les expressions populaires françaises qui décrivent de manière humoristique et imagée les personnes, stupides, ou simplement maladroites.
 
-[![Pas Fute Fute](./.github/app-mockup.png)](https://pasfutefute.fr)
+[![Pas Fute Fute](./.github/app-mockup.png)](https://quote.romain.chevrot)
 
 ## Les features
 
@@ -41,10 +41,10 @@
 
 Une API est disponible pour récupérer les expressions.
 
-Pour le moment, [une seule route](https://pasfutefute.fr/api/quotes/random) est disponible pour récupérer une expression aléatoire :
+Pour le moment, une seule route est disponible pour récupérer une expression aléatoire :
 
 ```bash
-curl https://pasfutefute.fr/api/quotes/random
+curl host/api/quotes/random
 
 # {
 #    "quote": "C'est pas le rosier le plus fleuri du jardin."
@@ -57,37 +57,24 @@ curl https://pasfutefute.fr/api/quotes/random
 
 Pour ajouter une expression, il suffit de modifier le fichier [`quotes.yaml`](./packages/data/src/quotes.yaml) dans le dossier [`packages/data/src/`](./packages/data/src/).
 
-A noter que pour être acceptée, une expression doit respecter les critères suivants :
-
-- L'expression doit être en français
-- L'expression doit être rédigée de façon inclusive
-- Éviter les expressions vulgaires ou discriminatoires
-- Pas de doublons ou de similarités forte avec des expressions déjà présentes
-
 ### Développement
 
-Pour contribuer au développement du projet, vous pouvez cloner le dépôt et installer les dépendances avec `pnpm` :
+Pour contribuer au développement du projet, vous pouvez cloner le dépôt :
 
 ```bash
-git clone https://github.com/CorentinTh/pas-fute-fute.git
-# ou
-git clone git@github.com:CorentinTh/pas-fute-fute.git
-# ou
-gh repo clone CorentinTh/pas-fute-fute
+git clone https://github.com/r-chvrt/pas-fute-fute.git
 ```
 
-Ensuite, installez les dépendances :
+Ensuite, build de l'image Docker :
 
 ```bash
-pnpm install
+docker compose build
 ```
 
-Pour lancer le projet en mode développement :
+Pour lancer le projet :
 
 ```bash
-cd packages/app
-
-pnpm dev
+docker compose up -d
 ```
 
 ## License
@@ -96,7 +83,7 @@ Ce projet est open source et sous licence MIT. Rendez-vous sur le fichier [`LICE
 
 ## Crédits
 
-Ce projet est développé et maintenu avec passion par [Corentin Thomasset](https://corentin.tech).
+Ce projet est développé par [Corentin Thomasset](https://corentin.tech), forké par [Romain Chevrot](https://romain.chevrot.ovh).
 
 Stack utilisée et mentions :
 
